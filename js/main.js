@@ -5,14 +5,11 @@ let arrayButtons = Array.from(buttons)
 
 let offScreen = document.getElementById("offScreen")
 
-let onScreen = document.getElementsByClassName("indexContent")
+let onScreen = document.getElementById("indexContent").style.display ="none"
 
-let powerBtn = document.getElementsByClassName("onBtn")
+const powerBtn = document.getElementsByClassName("onBtn")
 
-
-
-
-
+    
 
 
 
