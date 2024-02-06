@@ -3,13 +3,24 @@ const buttons = document.getElementsByClassName("button")
 
 let arrayButtons = Array.from(buttons)
 
-let offScreen = document.getElementById("screen")
+let offScreen = document.getElementById("offScreen")
 
-arrayButtons.map(
-    item => {
+let onScreen = document.getElementsByClassName("indexContent")
+
+let powerBtn = document.getElementsByClassName("onBtn")
+
+
+
+
+
+
+
+
+//mapeado el array de botones de tal forma que podamos añadir o remover clasesara dar lugar al evento "eleccion de canal"
+arrayButtons.map(item => {
         item.addEventListener("click", (evento) => {
-            screen.classList.remove(screen.classList[screen.classList.length - 1])
-            screen.classList.add("canal" + evento.target.id.slice(-1))
+            offScreen.classList.remove(offScreen.classList[offScreen.classList.length - 1]) //Removemos clase anterior para no acumular registro de canales clickados
+            offScreen.classList.add("Channel" + evento.target.id.slice(-1))
         })
     }
 )
