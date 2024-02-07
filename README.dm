@@ -32,7 +32,7 @@ https://github.com/MR-ant1/Television-interactiva.git
 
 To run and visualize it online, click the next link down below:
 
-https://mr-ant1.github.io/Proyecto-Carta-Restaurante/
+https://mr-ant1.github.io/Television-interactiva/
 
 As a way to improve myself, I decided to ramake the proyect from this one that I did with "some help"
 
@@ -68,6 +68,7 @@ Same process happens when you press again power, but this time main screen set t
 -Add a led "light" in the screen's corner to show the status of the tv in each moment (red/green)
 -Add a channel list menu and show the entire list of channels
 -The div containing the Channel's number when you select each, should be discarded when timeout pass, but I haven't enough time to implement this so I just turn it out black and made it less relevant than main screen when you turn on the TV.
+-For lack of time, couldn't fix a final bug finded where once you turn on one time the tv, you can turn off and even use channels without pressing power again. Important bug
 
 ### ACKNOWLEDGMENTS :raised_hands:
 
