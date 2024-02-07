@@ -13,8 +13,7 @@ Welcome to my second project in git! this one is a pre-final version of an inter
 ### STACK :wrench:
 ![Alt text](./img/CSS3_and_HTML5_logos_and_wordmarks.svg.png)
 <img src="https://img.shields.io/badge/JAVASCRIPT-000000?style=for-the-badge&logo=javascript&logoColor=yelow" alt="JS" />
-<img alt="Static Badge" src="https://img.shields.io/badge/CSS">
-![Static Badge](https://img.shields.io/badge/HTML)
+
 
 
 

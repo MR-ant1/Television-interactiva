@@ -300,3 +300,15 @@ body {
 .portada {
     background-color: black;
 }
+#onOff:hover {
+    color: rgb(77, 7, 7);
+    transition: background-color 0.5s;
+    cursor: pointer;
+    
+}
+
+.button:hover {
+    background-color: rgb(41, 41, 41);
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
