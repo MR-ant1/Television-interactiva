@@ -14,27 +14,8 @@ const clock = document.querySelector(".clockAndDate")
 
 
 
-function actualizarReloj() {
-    const ahora = new Date();
-    const horas = ahora.getHours().toString().padStart(2, '0');
-    const minutos = ahora.getMinutes().toString().padStart(2, '0');
-    const segundos = ahora.getSeconds().toString().padStart(2, '0');
 
-    const horaActual = `${horas}:${minutos}:${segundos}`;
-    clock.textContent = horaActual; // Mostrar la hora
 
-    // Mostrar la fecha
-    const fecha = ahora.toLocaleDateString('es-ES', {
-        year: 'numeric',
-        month: 'numeric',
-        day: 'numeric'
-    });
-
-    clock.textContent += ` | ${fecha}`;
-}
-
-// Actualizar el reloj cada segundo
-setInterval(actualizarReloj, 1000);
 
 
 
@@ -61,7 +42,11 @@ let Ontv = false
                     offScreen.classList.remove(offScreen.classList[offScreen.classList.length - 1])
                      //Removemos clase anterior para no acumular registro de canales clickados
                     offScreen.classList.add("Channel" + evento.target.id.slice(-1)) 
-                    indexContent.style.display = "none" }) }) 
+                    indexContent.style.display = "none"
+                    channelNumber.textContent = evento.target.id.slice(-1);
+                    setTimeout(() => {
+                    channelNumber.textContent = "";
+                    }, 2000) }) }) 
                      } 
                      else {
                         indexContent.style.display = "none"
@@ -70,3 +55,23 @@ let Ontv = false
                     })
           
                    
+function actualizarReloj() {
+    const ahora = new Date();
+    const horas = ahora.getHours().toString().padStart(2, '0');
+    const minutos = ahora.getMinutes().toString().padStart(2, '0')
+    const segundos = ahora.getSeconds().toString().padStart(2, '0')
+
+    const horaActual = `${horas}:${minutos}:${segundos}`
+    clock.textContent = horaActual; // Mostrar la hora
+
+    // Mostrar la fecha
+    const fecha = ahora.toLocaleDateString('es-ES', {
+        year: 'numeric',
+        month: 'numeric',
+        day: 'numeric'
+    });
+
+    clock.textContent += ` | ${fecha}`}
+    
+    // Actualizar el reloj cada segundo
+    setInterval(actualizarReloj, 1000);

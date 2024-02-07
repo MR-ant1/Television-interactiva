@@ -209,11 +209,10 @@ background-color: rgb(255, 0, 183);
 background-color: rgb(255, 247, 0);
 }
 .clockAndDate {
-height: 6em;
-width: 14em;
-margin-bottom: 6em;
+height: 4em;
+width: 4em;
 display: flex;
-flex-direction: row;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 position: absolute;
@@ -236,11 +235,14 @@ font-size: 2em;
 .selectedChannel {
     height: 3em;
     width: 4em;
-    background-color: rgb(96, 96, 96);
+    
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2em;
+    position: absolute;
+    margin-top: 0.5em;
+    color:white;
 }
 .indexContent {
     display: flex;
@@ -255,9 +257,9 @@ font-size: 2em;
 .selectedChannelControl {
     height:28em;
     width: 46em;
-    display: none;
     justify-content: flex-start;
     align-items: flex-start;
+    position: absolute;
 }
 
 .portada {
