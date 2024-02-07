@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    padding:0;
+    padding: 0;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -9,54 +9,61 @@ body {
     align-items: center;
     background-color: rgb(254, 254, 238);
 }
+
 #container {
     height: 43em;
     width: 86em;
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: rgb(240, 240, 240);
 }
+
 #tvborder {
     height: 30em;
     width: 50em;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: black;
-    
+
 }
+
 #offScreen {
     height: 26em;
     width: 46em;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid rgb(0, 0, 0) 
+    border: solid rgb(0, 0, 0)
 }
+
 .basicScreen {
-     background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
 }
+
 #remote {
     height: 22em;
     width: 8em;
     margin-left: 10em;
     display: flex;
     align-items: center;
-    justify-content:space-around;
+    justify-content: space-around;
     flex-direction: column;
     background-color: black;
 
 }
+
 .tvAndRemote {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
+
 #filaOnOff {
     height: 3em;
     width: 8em;
@@ -65,53 +72,60 @@ body {
     justify-content: space-around;
     align-items: center;
 }
+
 #filaVolumeCh {
     height: 7em;
     width: 8em;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center; 
+    align-items: center;
 }
+
 #filaButtons1-3 {
     height: 3em;
     width: 8em;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center; 
+    align-items: center;
 }
+
 #filaButtons4-6 {
     height: 3em;
     width: 8em;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center; 
+    align-items: center;
 }
+
 #filaButtons7-9 {
     height: 3em;
     width: 8em;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center; 
+    align-items: center;
 }
+
 .tvArm {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .verticalLeg {
     width: 4em;
-    height:7em;
+    height: 7em;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: black;
 }
+
 .horizontalLeg {
     width: 18em;
     height: 4em;
@@ -122,12 +136,14 @@ body {
     background-color: black;
     border-radius: 40%
 }
+
 .tvAndLegs {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 #onOff {
     width: 2.5em;
     height: 2.5em;
@@ -141,6 +157,7 @@ body {
     margin-top: 0.5em;
     margin-left: 0.5em
 }
+
 #Options {
     width: 2em;
     height: 2em;
@@ -151,73 +168,76 @@ body {
     align-items: center;
     border-radius: 50%;
 }
+
 #Volume {
-height: 4.4em;
-width: 2.2em;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
-background-color: rgb(28, 28, 28);
-color: white;
+    height: 4.4em;
+    width: 2.2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(28, 28, 28);
+    color: white;
 }
-#ChannelsNextPrev {
-height: 4.4em;
-width: 2.2em;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
-background-color: rgb(28, 28, 28);
-color: white;
-}
+
 .button {
-height: 2em;
-width: 2em;
-background-color: rgb(52, 52, 52);
-border-radius: 50%;
-color: white;
-display: flex;
-justify-content: center;
-align-items: center;
+    height: 2em;
+    width: 2em;
+    background-color: rgb(52, 52, 52);
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .Channel1 {
-background-color: rgb(50, 50, 255);
+    background-color: rgb(50, 50, 255);
 }
+
 .Channel2 {
-background-color: rgb(0, 174, 0);
+    background-color: rgb(0, 174, 0);
 }
+
 .Channel3 {
-background-color: rgb(255, 136, 0);
+    background-color: rgb(255, 136, 0);
 }
+
 .Channel4 {
-background-color: rgb(255, 0, 0);
+    background-color: rgb(255, 0, 0);
 }
+
 .Channel5 {
-background-color: rgb(63, 116, 197);
+    background-color: rgb(63, 116, 197);
 }
+
 .Channel6 {
-background-color: rgb(153, 255, 0);
+    background-color: rgb(153, 255, 0);
 }
+
 .Channel7 {
-background-color: rgb(139, 43, 230);
+    background-color: rgb(139, 43, 230);
 }
+
 .Channel8 {
-background-color: rgb(255, 0, 183);
+    background-color: rgb(255, 0, 183);
 }
+
 .Channel9 {
-background-color: rgb(255, 247, 0);
+    background-color: rgb(255, 247, 0);
 }
+
 .clockAndDate {
-height: 4em;
-width: 4em;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-position: absolute;
-font-size: 2em;
+    height: 4em;
+    width: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 2em;
 }
+
 .OnPicture {
     max-width: 14em;
     max-height: 8em;
@@ -226,12 +246,14 @@ font-size: 2em;
     align-items: center;
     position: relative;
 }
+
 .clockAndWelcome {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .selectedChannel {
     height: 3em;
     width: 4em;
@@ -241,20 +263,23 @@ font-size: 2em;
     font-size: 2em;
     position: absolute;
     margin-top: 0.5em;
-    color:white;
+    color: white;
 }
+
 .indexContent {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 #welcomePic {
     height: 26em;
     width: 46em;
-    
+
 }
+
 .selectedChannelControl {
-    height:28em;
+    height: 28em;
     width: 46em;
     justify-content: flex-start;
     align-items: flex-start;
@@ -262,22 +287,5 @@ font-size: 2em;
 }
 
 .portada {
-    background-color:black;
-}
-.overled {
-    height: 30em;
-    width: 50em;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    position: absolute;
-}
-.led {
-    height: 1em;
-    width: 1em;
-    margin-bottom: 0.5em;
-    margin-right: 0.5em;
-    position: absolute;
-    background-color: rgb(139, 0, 0);
-    border-radius: 50%;
+    background-color: black;
 }
