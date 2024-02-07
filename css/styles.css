@@ -251,7 +251,6 @@ color:white
 #welcomePic {
     height: 26em;
     width: 46em;
-    margin-bottom: 18em;
     
 }
 .selectedChannelControl {
@@ -260,4 +259,8 @@ color:white
     display: none;
     justify-content: flex-start;
     align-items: flex-start;
+}
+
+.portada {
+    background-color:black;
 }
