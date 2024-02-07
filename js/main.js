@@ -23,6 +23,13 @@ const indexFather = document.getElementsByClassName("selectedChannel")
                 
                 if (offScreen.classList.contains("Welcome")) {
                     indexContent.style.display = "flex"
+                arrayButtons.map(item => {
+            item.addEventListener("click", (evento) => {
+            offScreen.classList.remove(offScreen.classList[offScreen.classList.length - 1]) //Removemos clase anterior para no acumular registro de canales clickados
+            offScreen.classList.add("Channel" + evento.target.id.slice(-1))
+            indexContent.style.display = "none" }) })   
+
+                
                 } else {
                     indexContent.style.display = "none"
                 }
@@ -30,15 +37,7 @@ const indexFather = document.getElementsByClassName("selectedChannel")
 //mapeado el array de botones de tal forma que podamos añadir o remover clases hara dar lugar al evento "eleccion de canal"
             
           
-            if (indexContent.classList.contains("Welcome")) {
-            arrayButtons.map(item => {
-            item.addEventListener("click", (evento) => {
-            offScreen.classList.remove(offScreen.classList[offScreen.classList.length - 1]) //Removemos clase anterior para no acumular registro de canales clickados
-            offScreen.classList.add("Channel" + evento.target.id.slice(-1))
-            indexContent.style.display = "none"
-             
-    })
-    }
-)           
-} 
+            
+                    
+
             
