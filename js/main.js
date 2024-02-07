@@ -4,8 +4,8 @@ let arrayButtons = Array.from(buttons)
 
 let offScreen = document.getElementById("offScreen")
 
-let indexContent = document.getElementById("indexContent") //buscar como hanilitar el display mas adelante mediante funcion
-
+let indexContent = document.getElementById("indexContent") 
+                                                                    //Aqui están todas las variables necesarias llamdas
 const powerBtn = document.getElementById("onOff")
 
 const selectedChannel = document.getElementsByClassName("selectedChannel")
@@ -13,42 +13,39 @@ const selectedChannel = document.getElementsByClassName("selectedChannel")
 const clock = document.querySelector(".clockAndDate")
 
 
-
-
-
-
-
 let Ontv = false
-//ocultamos de salida la pantalla de encendido, de tal forma que solo se harávisible cuando se presione en el Powerbtn
+
+//Se oculta de salida la pantalla de encendido, de tal forma que solo se harávisible cuando se presione en el Powerbtn
 
 indexContent.style.display = "none"
 
 powerBtn.addEventListener("click", (e) => {
-
-    //añadimos toggle a las variables de pantalla encendida y apagada y se genera la clase "fantasma" Welcome que nos servirá para controlar eventos posteriores
-    /* offScreen.classList.toggle("Welcome")
-     indexContent.classList.toggle("Welcome")*/
+ 
+    //Se le da valor booleano a Ontv para controlar el evento click en el boton power del mando
     Ontv = !Ontv
 
-    //(offScreen.classList.contains("Welcome")){
+    
     if (Ontv === true) {
         indexContent.style.display = "flex"
         //mapeado el array de botones de tal forma que podamos añadir o remover clases hara dar lugar al evento "eleccion de canal"
         arrayButtons.map(item => {
             item.addEventListener("click", (evento) => {
                 offScreen.classList.remove(offScreen.classList[offScreen.classList.length - 1])
-                //Removemos clase anterior para no acumular registro de canales clickados
+                //Remueve la clase anterior para no acumular registro de canales clickados
+                
                 offScreen.classList.add("Channel" + evento.target.id.slice(-1))
+                //Se esconde la pantalla de inicio y después se ejecuta el número de canal en una esquina durante dos segundos mediante setTimeOut
+               
                 indexContent.style.display = "none"
-                channelNumber.textContent = evento.target.id.slice(-1);
+                channelNumber.textContent = evento.target.id.slice(-1)
                 setTimeout(() => {
-                    channelNumber.textContent = "";
+                    channelNumber.textContent = ""     //después de mostrarse el número de canal, su valor vuelve a ser el de un string vacío
                 }, 1000)
             })
         })
     }
     else {
-        indexContent.style.display = "none"
+        indexContent.style.display = "none"         //si al pulsar power devuelve Ontv false, se quita la pantalla de inicio y la tv queda apagada
         offScreen.classList.add("portada")
     }
 })
@@ -73,6 +70,6 @@ function actualizarReloj() {
     clock.textContent += ` | ${fecha}`
 }
 
-// Actualizar el reloj cada segundo
+// Actualización del reloj cada segundo
 setInterval(actualizarReloj, 1000);
 
