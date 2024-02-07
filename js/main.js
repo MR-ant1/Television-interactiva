@@ -12,7 +12,7 @@ const selectedChannel = document.getElementsByClassName("selectedChannel")
 
 const clock = document.querySelector(".clockAndDate")
 
-
+let led = document.getElementsByClassName("led")
 
 
 
@@ -46,7 +46,7 @@ let Ontv = false
                     channelNumber.textContent = evento.target.id.slice(-1);
                     setTimeout(() => {
                     channelNumber.textContent = "";
-                    }, 2000) }) }) 
+                    }, 1000) }) }) 
                      } 
                      else {
                         indexContent.style.display = "none"
@@ -75,3 +75,9 @@ function actualizarReloj() {
     
     // Actualizar el reloj cada segundo
     setInterval(actualizarReloj, 1000);
+
+
+
+    if (Ontv=true) {
+        
+    }
