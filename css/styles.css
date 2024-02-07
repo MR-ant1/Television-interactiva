@@ -208,16 +208,16 @@ background-color: rgb(255, 0, 183);
 .Channel9 {
 background-color: rgb(255, 247, 0);
 }
-.clock {
+.clockAndDate {
 height: 6em;
 width: 14em;
 margin-bottom: 6em;
 display: flex;
+flex-direction: row;
 justify-content: center;
 align-items: center;
 position: absolute;
 font-size: 2em;
-color:white
 }
 .OnPicture {
     max-width: 14em;
@@ -229,7 +229,7 @@ color:white
 }
 .clockAndWelcome {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -240,7 +240,6 @@ color:white
     display: flex;
     justify-content: center;
     align-items: center;
-    display: none;
     font-size: 2em;
 }
 .indexContent {
