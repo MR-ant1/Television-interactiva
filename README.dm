@@ -11,8 +11,8 @@ Welcome to my second project in git! this one is a pre-final version of an inter
 - [Acknowledgments :raised_hands:][def]
 
 ### STACK :wrench:
-![Alt text](./img/CSS3_and_HTML5_logos_and_wordmarks.svg.png)
-<img src="https://img.shields.io/badge/JAVASCRIPT-000000?style=for-the-badge&logo=javascript&logoColor=yelow" alt="JS" />
+![logo HTML y CSS](./img/CSS3_and_HTML5_logos_and_wordmarks.svg.png)
+![Javascript](<img src="https://img.shields.io/badge/JAVASCRIPT-000000?style=for-the-badge&logo=javascript&logoColor=yelow" alt="JS" />)
 
 
 
@@ -41,12 +41,12 @@ https://github.com/MR-ant1/Proyecto-Televisi-n-interactiva.git
 ### DATABASE DESING :computer:
 
 Here I leave some screenshots showing the HTML, CSS and Javascript codes and some more of the Tv working:
-!(img/Captura de pantalla 2024-02-07 211547.png)
-!(img/Captura de pantalla 2024-02-07 211603.png)
-!(img/Captura de pantalla 2024-02-07 211634.png)
-!(img/Captura de pantalla 2024-02-07 211717.png)
-!(img/Captura de pantalla 2024-02-07 211811.png)
-!(img/Captura de pantalla 2024-02-07 211823.png)
+![captura](./img/Captura de pantalla 2024-02-07 211547.png)
+![captura2](./img/Captura de pantalla 2024-02-07 211603.png)
+![captura3](./img/Captura de pantalla 2024-02-07 211634.png)
+![captura4](./img/Captura de pantalla 2024-02-07 211717.png)
+![captura5](./img/Captura de pantalla 2024-02-07 211811.png)
+![]captura6(./img/Captura de pantalla 2024-02-07 211823.png)
 
 -ESTETIC DESIGN: The way I built the tv and remote design, was basically making a first contain where I put a main row dedicated to TV and remote and then I made some columns dedicated to TV to get the possibility to put legs to it. 
 The remote is only a column with some rows where I put the buttons in 3 levels: Power-options, volume-channelchange (no funtional) and 1-9 channel buttons.
