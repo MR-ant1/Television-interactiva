@@ -29,18 +29,19 @@ powerBtn.addEventListener("click", (e) => {
         indexContent.style.display = "flex"
         //mapeado el array de botones de tal forma que podamos añadir o remover clases hara dar lugar al evento "eleccion de canal"
         arrayButtons.map(item => {
+            
             item.addEventListener("click", (evento) => {
-                offScreen.classList.remove(offScreen.classList[offScreen.classList.length - 1])
+                if (Ontv===true){offScreen.classList.remove(offScreen.classList[offScreen.classList.length - 1])
                 //Remueve la clase anterior para no acumular registro de canales clickados
                 
-                offScreen.classList.add("Channel" + evento.target.id.slice(-1))
+                offScreen.classList.add("Channel" + evento.target.id.slice(-1))}
                 //Se esconde la pantalla de inicio y después se ejecuta el número de canal en una esquina durante dos segundos mediante setTimeOut
                
-                indexContent.style.display = "none"
+                if (Ontv===true) {indexContent.style.display = "none"
                 channelNumber.textContent = evento.target.id.slice(-1)
                 setTimeout(() => {
                     channelNumber.textContent = ""     //después de mostrarse el número de canal, su valor vuelve a ser el de un string vacío
-                }, 1000)
+                }, 1000)}
             })
         })
     }
@@ -72,4 +73,3 @@ function actualizarReloj() {
 
 // Actualización del reloj cada segundo
 setInterval(actualizarReloj, 1000);
-
