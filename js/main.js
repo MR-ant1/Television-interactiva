@@ -49,6 +49,7 @@ powerBtn.addEventListener("click", (e) => {
     }
     else {
         indexContent.style.display = "none"         //si al pulsar power devuelve Ontv false, se quita la pantalla de inicio y la tv queda apagada
+        offScreen.classList.remove(offScreen.classList[offScreen.classList.length - 1])
         offScreen.classList.add("portada")
     }
 })
