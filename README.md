@@ -2,17 +2,20 @@
 Welcome to my second project in git! this one is a pre-final version of an interactive television which offers a fictional use of a real tv in your screen with the three lenguages mentioned a little further down
 
 ### TABLE OF CONTENTS :open_file_folder: 
-- [Stack :wrench:](#Stack-)
-- [Features :bulb:](#Features-)
-- [Where to try and visualize it :mag:](#Where-to-try-and-visualize-it-) 
-- [Database design :computer:](#Database-design-)
-- [Author :pencil2:](#Author-)
-- [Potential improvements :heavy_check_mark:](#Potential-improvements-)
-- [Acknowledgments :raised_hands:][def]
+- [Televisión Interactiva](#televisión-interactiva)
+    - [TABLE OF CONTENTS :open\_file\_folder:](#table-of-contents-open_file_folder)
+    - [STACK :wrench:](#stack-wrench)
+    - [FEATURES :bulb:](#features-bulb)
+    - [WHERE TO TRY AND VISUALIZE IT :mag:](#where-to-try-and-visualize-it-mag)
+    - [DATABASE DESING :computer:](#database-desing-computer)
+    - [AUTHOR :pencil2:](#author-pencil2)
+    - [POTENTIAL IMPROVEMENTS :heavy\_check\_mark:](#potential-improvements-heavy_check_mark)
+    - [ACKNOWLEDGMENTS :raised\_hands:](#acknowledgments-raised_hands)
 
 ### STACK :wrench:
-![logo HTML y CSS](./img/CSS3_and_HTML5_logos_and_wordmarks.svg.png)
-![Javascript](<img src="https://img.shields.io/badge/JAVASCRIPT-000000?style=for-the-badge&logo=javascript&logoColor=yelow" alt="JS" />)
+![logo HTML y CSS](./img/CSS3_and_HTML5_logos_and_wordmarks.svg.png){width=50} <img width=30 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+
+
 
 
 
@@ -41,13 +44,12 @@ https://github.com/MR-ant1/Proyecto-Televisi-n-interactiva.git
 ### DATABASE DESING :computer:
 
 Here I leave some screenshots showing the HTML, CSS and Javascript codes and some more of the Tv working:
-![captura](./img/Captura de pantalla 2024-02-07 211547.png)
-![captura2](./img/Captura de pantalla 2024-02-07 211603.png)
-![captura3](./img/Captura de pantalla 2024-02-07 211634.png)
-![captura4](./img/Captura de pantalla 2024-02-07 211717.png)
-![captura5](./img/Captura de pantalla 2024-02-07 211811.png)
-![]captura6(./img/Captura de pantalla 2024-02-07 211823.png)
-
+![alt text](<img/Captura de pantalla 2024-02-07 211547.png>)
+![alt text](<img/Captura de pantalla 2024-02-07 211603.png>)
+![alt text](<img/Captura de pantalla 2024-02-07 211634.png>)
+![alt text](<img/Captura de pantalla 2024-02-07 211717.png>)
+![alt text](<img/Captura de pantalla 2024-02-07 211811.png>)
+![alt text](<img/Captura de pantalla 2024-02-07 211823.png>)
 -ESTETIC DESIGN: The way I built the tv and remote design, was basically making a first contain where I put a main row dedicated to TV and remote and then I made some columns dedicated to TV to get the possibility to put legs to it. 
 The remote is only a column with some rows where I put the buttons in 3 levels: Power-options, volume-channelchange (no funtional) and 1-9 channel buttons.
 -JAVASCRIPT FUNCTIONING: I set a boolean value which controls all events depending on if tv has been turned on or not. 
