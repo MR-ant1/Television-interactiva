@@ -38,10 +38,17 @@ powerBtn.addEventListener("click", (e) => {
                 //Se esconde la pantalla de inicio y después se ejecuta el número de canal en una esquina durante dos segundos mediante setTimeOut
                
                 if (Ontv===true) {indexContent.style.display = "none"
+                clearTimeout(timeoutCanal)
+                channelNumber.textContent = evento.target.id.slice(-1)
+                timeoutCanal = setTimeout(() => {
+                    channelNumber.textContent = ""     //después de mostrarse el número de canal, su valor vuelve a ser el de un string vacío
+                }, 1000)}
+                /*if (Ontv===true) {indexContent.style.display = "none"
+                
                 channelNumber.textContent = evento.target.id.slice(-1)
                 setTimeout(() => {
                     channelNumber.textContent = ""     //después de mostrarse el número de canal, su valor vuelve a ser el de un string vacío
-                }, 1000)}
+                }, 1000)}*/
             })
         })
     }

@@ -13,10 +13,7 @@ Welcome to my second project in git! this one is a pre-final version of an inter
     - [ACKNOWLEDGMENTS :raised\_hands:](#acknowledgments-raised_hands)
 
 ### STACK :wrench:
-![logo HTML y CSS](./img/CSS3_and_HTML5_logos_and_wordmarks.svg.png){width=50} <img width=30 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-
-
-
+<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" /><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS" /><img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=for-the-badge" alt="js"/>
 
 
 
